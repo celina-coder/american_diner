@@ -1,0 +1,426 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    background : url(../images/bg.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.site{
+    font-family: 'Oswald', sans-serif;
+}
+
+h2{
+    color: rgb(207, 195, 83);
+    text-align: center;
+    padding : 20px;
+}
+
+/*HEADER*/
+
+.canvas{
+    
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 800px;
+    
+}
+     
+.text{
+    color:#fff;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.btn{
+    margin-bottom: 20px;
+}
+
+.horaire{
+    margin-top: 15px;
+    padding: 15px;
+    color:#fff;
+    font-size: 2em;
+    text-align: center;
+
+}   
+
+.nav{
+    margin-bottom: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#menu{
+    text-decoration: none;
+}
+
+.row{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row_items{
+    width:30%;
+    margin: 0 auto;
+}
+
+.onglet{
+    display: flex;
+    justify-content: row;
+    flex-wrap:wrap;
+    margin: 0 auto;
+
+}
+
+/*FLEXSLIDER*/
+
+.flexslider{
+  
+margin: 0 auto;
+width:60%;
+    
+}
+
+.flex{
+    width: 30%;
+    border: 2px solid white;
+    margin: 0 auto;
+    
+}
+
+/*MAIN*/
+
+#afficher{
+    display: none;
+}
+
+.thumbnail img {
+    background: #67a8f3;
+    
+}
+
+.img-thumbnail{
+    opacity: 0.3;
+}
+
+.thumbnail {
+    padding: 18px;
+    
+}
+
+.price{
+    background: #6c6d6c;
+    box-shadow: 0 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 1px rgba(0,0,0,0.2);
+    color:#fff;
+    text-shadow: 2px 2px #333;
+    padding: 5px 10px;
+    font-size: 20px; 
+}
+
+.text-white{
+    margin-bottom: 30px;
+}
+
+.price::before{
+    border: 4px solid transparent; 
+    border-bottom: 4px solid #e0d31f;
+    border-left:4px solid #e0d31f;
+    content:"";
+    right: 1px;
+}
+
+.caption >h4{
+    color:#67a8f3;
+    font-size:18px;
+    font-family: 'Lobster', cursive;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>.active>a:hover{
+    background:#67a8f3;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+    color:#b43030;
+    background-color: #eee;
+}
+
+.nav>li>a{
+    color:#eee;
+    font-size: 2em;
+}
+
+
+/* CONNECT*/
+
+.connexion{
+    display: flex;
+    justify-content: flex-end;  
+
+}
+
+.type {
+    border: 1px solid  #fff ;
+    border-radius: 0.5em; 
+    text-align: center;
+}
+
+.label{
+    color:   rgb(218, 75, 75);
+    font-size: 1.5em;
+    margin : 20px;
+}
+
+.connect{
+    color: rgb(207, 195, 83);
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+input[type=submit] {
+
+ margin: auto;
+}
+
+input[type=email]{
+    text-align: center;
+}
+
+/*MODAL*/
+
+button, .modal-header {
+    background-color: #67a8f3 !important;
+}
+
+/* MODAL SETTING*/
+.custom-control-input:checked~.custom-control-label::before, .custom-control-input:checked~.custom-control-label::after {
+    background-color: #67a8f3 !important;
+    border-radius: 5px;
+    
+}
+
+.custom-control-input:focus~.custom-control-label::before, .custom-control-input:focus~.custom-control-label::after {
+    box-shadow: none;
+  }
+
+
+/*FOOTER*/
+
+footer{
+    padding: 50px;
+}
+
+.reseau{
+    color:white;
+    display: flex;
+    justify-content: row;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.icone{
+    list-style-type: none;
+}
+
+.cnx{
+    color:white;
+    font-size: 1.5em;
+    text-decoration:none;
+    display: block;
+    float: right;
+}
+   
+input{
+    color:#67a8f3;
+}
+
+.administrateur{
+    color:rgb(218, 75, 75);
+    font-size: 1.5em;
+    text-decoration : none;
+}
+
+
+/*ADMIN*/
+
+.admin{
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.help-inline{
+    color: red;
+}
+
+strong{
+    margin: 5px;
+}
+
+.deconnexion{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 465px){
+
+.canvas{
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 280px;
+    
+}
+#logo{
+    width: 480px;
+    margin-top:30px;
+
+}
+ .nav-pills{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0 ;
+ }
+
+ nav {
+     display: flex;
+     justify-content: center;
+ }   
+
+.administrateur{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 1em;
+}
+
+.connexion{
+    display: flex;
+    flex-direction: column;
+    padding:15px;
+}
+
+.input{
+    margin:10px;
+}
+
+.onglet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.row_items {
+    width: 90%;
+ 
+}
+
+input[type]{
+
+    font-size: 0.8em;
+}
+
+input[type=submit]{
+
+    margin-left: 30px;
+}
+
+.modal-content{
+    width: 60%;
+    margin:10px;
+    margin-top: -30px;
+}
+
+
+}
+
+
+@media screen and (min-width: 768px){
+
+.canvas{
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 460px;
+        
+ }
+
+ #logo{
+    width: 800px;
+    margin-top:30px;
+ }
+
+.nav-pills{
+    padding: 0;
+    margin-top: 40px; 
+ }
+
+.nav{
+    justify-content: column;
+}
+
+.connexion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:20px;
+}
+
+.input{
+    margin:10px;
+
+}
+
+.connect{
+    padding: 30px;
+    margin: 15px 20px 15px 20px;
+}
+
+.row_items {
+    width: 40%;
+ 
+}
+.administrateur{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 1.5em;
+}
+
+.label{
+    margin-bottom: 15px;
+}
+
+.submit{
+    margin: auto;
+    padding: 45px;
+}
+
+
+}
+
+/* Les liens JS sont normalement dans le footer en bonne pratique mais ayant pas de footer
+ sur categories je me suis permis de les mettre dans le header*/
+
+
+ 
